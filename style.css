@@ -26,4 +26,7 @@ p {
   margin: 0 auto;
 
   padding: 24px;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
