@@ -73,3 +73,20 @@ a {
   margin-top: 8px;
   margin-bottom: 24px;
 }
+
+.input {
+  margin-bottom: 20px;
+}
+
+.input label {
+  font-size: 12px;
+  color: var(--text-color);
+  display: block;
+}
+
+.input input {
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  width: 100%;
+  outline: none;
+}
