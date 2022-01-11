@@ -17,11 +17,8 @@
     <title>Behold</title>
   </head>
 
-  <!--  prettier-ignore -->
-
   <body>
     <div id="container">
-
       <div class="logo-container">
         <img src="img/behold-logo.png" alt="Behold logo" />
       </div>
@@ -29,72 +26,71 @@
       <div class="panel-container">
         <div class="panel">
           <h1 class="panel__heading">Create an account</h1>
-          <p class="panel__subheading"> Already have an account? <a href="">Sign in</a></p>
+          <p class="panel__subheading">
+            Already have an account? <a href="">Sign in</a>
+          </p>
+
+          <!-- Form Information -->
+          <form>
+            <div class="input">
+              <label for="email-address">Email Address</label>
+              <input type="email" required id="email-address" />
+            </div>
+
+            <div class="name">
+              <div class="input">
+                <label for="first-name">First Name</label>
+                <input type="text" required id="first-name" />
+              </div>
+
+              <div class="input">
+                <label for="last-name">Last Name</label>
+                <input type="text" required id="last-name" />
+              </div>
+            </div>
+
+            <div class="input">
+              <label for="password">Password</label>
+              <input type="password" required id="password" />
+            </div>
+
+            <!-- Date of Birth Information -->
+            <div class="d-o-b">
+              <h6 class="d-o-b__heading">Date of birth</h6>
+
+              <!-- Dropdown "Month" Menu -->
+              <div class="dropdown">
+                <label for="month">Month</label>
+                <select name="month" id="month">
+                  <option value="january">January</option>
+                  <option value="feburary">Feburary</option>
+                  <option value="march">March</option>
+                  <option value="april">April</option>
+                </select>
+              </div>
+
+              <!-- Day -->
+              <div class="input">
+                <label for="day">Day</label>
+                <input type="number" required id="day" min="1930" max="2015" />
+              </div>
+
+              <!-- Year -->
+              <div class="input">
+                <label for="year">Year</label>
+                <input type="number" required id="year" />
+              </div>
+            </div>
+
+            <p class="consents">
+              By clicking Create account, I agree that I have read the
+              <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>
+            </p>
+
+            <button type="submit">Create account</button>
+          </form>
         </div>
       </div>
-
-      <!-- Form Information -->
-      <form>
-
-        <div class="input">
-          <label for="email-address">Email Address</label>
-          <input type="email" required id="email-address">
-        </div>
-        
-
-        <div class="name">
-          <div class="input">
-            <label for="first-name">First Name</label>
-            <input type="text" required id="first-name">
-          </div>
-
-          <div class="input">
-            <label for="last-name">Last Name</label>
-            <input type="text" required id="last-name">
-          </div>
-        </div>
-        
-        <div class="input">
-          <label for="password">Password</label>
-          <input type="password" required id="password">
-        </div>
-        
-        <!-- Date of Birth Information -->
-        <div class="d-o-b">
-          <h6 class="d-o-b__heading">Date of birth</h6>
-         
-          <!-- Dropdown "Month" Menu -->
-          <div class="dropdown">  
-            <label for="month">Month</label>
-            <select name="month" id="month">
-              <option value="january">January</option>
-              <option value="feburary">Feburary</option>
-              <option value="march">March</option>
-              <option value="april">April</option>>
-            </select>
-          </div>
-          
-          <!-- Day -->
-          <div class="input">
-            <label for="day">Day</label>
-            <input type="number" required id="day" min="1930" max="2015" />
-          </div>
-
-          <!-- Year -->
-          <div class="input">
-            <label for="year">Year</label>
-            <input type="number" required id="year">
-          </div>
-        </div>
-
-        <p class="consents"> 
-          By clicking Create account, I agree that I have read 
-          the <a href= "">Terms of Use</a> and <a href="">Privacy Policy</a>
-        </p>
-
-        <button type="submit">Create account</button>
-      </form>
-
-    </div>    
+    </div>
   </body>
 </html>
