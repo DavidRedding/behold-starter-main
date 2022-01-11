@@ -76,6 +76,7 @@ a {
 
 .input {
   margin-bottom: 20px;
+  position: relative;
 }
 
 .input label {
@@ -89,4 +90,20 @@ a {
   border-bottom: 1px solid var(--border-color);
   width: 100%;
   outline: none;
+  padding: 0;
+  height: 28px;
+}
+
+.input__indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+}
+
+/* When focused, the background is primary */
+.input input:focus ~ .input__indicator {
+  background-color: var(--primary-color);
 }
