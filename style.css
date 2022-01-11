@@ -158,3 +158,29 @@ button {
   background-color: var(--primary-color);
   border-radius: 8px;
 }
+
+/* When the browser window is at 660px or less */
+@media only screen and (max-width: 660px) {
+  .logo-container {
+    display: none;
+  }
+
+  .panel-container {
+    grid-column: 1/13;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  #container {
+    padding: 0;
+  }
+
+  .panel {
+    height: 100vh;
+    border-radius: 8px;
+  }
+
+  .name {
+    display: block;
+  }
+}
