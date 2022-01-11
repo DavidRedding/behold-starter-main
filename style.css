@@ -97,13 +97,16 @@ a {
 .input__indicator {
   position: absolute;
   bottom: 0;
-  left: 0;
-
-  width: 100%;
+  left: 50%;
+  width: 0;
   height: 2px;
+
+  transition: all 300ms ease-in-out;
 }
 
 /* When focused, the background is primary */
 .input input:focus ~ .input__indicator {
+  left: 0;
+  width: 100%;
   background-color: var(--primary-color);
 }
