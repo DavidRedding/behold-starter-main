@@ -110,3 +110,9 @@ a {
   width: 100%;
   background-color: var(--primary-color);
 }
+
+.name {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
