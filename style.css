@@ -8,9 +8,7 @@
   font: inherit;
   color: inherit;
 }
-html {
-  background-color: orange;
-}
+
 body {
   padding: 0;
   margin: 0;
@@ -31,7 +29,6 @@ a {
 }
 
 #container {
-  background-color: rgb(63, 63, 29);
   max-width: 1100px;
   margin: 0 auto;
   padding: 24px;
@@ -44,12 +41,10 @@ a {
 
 .logo-container {
   grid-column: 1/5;
-  background-color: powderblue;
 }
 
 .panel-container {
   grid-column: 6/12;
-  background-color: orchid;
 }
 
 .panel {
@@ -137,4 +132,29 @@ a {
   border-bottom: 1px solid var(--border-color);
   height: 28px;
   padding: 0;
+}
+
+.d-o-b__inputs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.7em;
+}
+
+.consents {
+  font-size: 12px;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-radius: 2;
+  padding: 10px 24px;
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 8px;
 }
